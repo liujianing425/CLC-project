@@ -3,232 +3,218 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First GitHub Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Beginner Tutorial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-      color: #212529;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+      color: #333;
       margin: 0;
-      padding: 0 20px;
+      padding: 0;
     }
 
-    h1 {
+    header {
+      background-color: #6200ea;
+      color: white;
+      padding: 40px 20px;
       text-align: center;
-      color: #0d6efd;
-      margin-top: 60px;
-      font-size: 2.5em;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    h2 {
-      color: #343a40;
-      margin-top: 30px;
-      font-size: 1.75em;
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .container {
+      padding: 30px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .section {
       background-color: #ffffff;
-      padding: 20px;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      max-width: 800px;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 16px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    h2, h3 {
+      color: #1a237e;
     }
 
     ul {
-      list-style-type: none;
-      padding-left: 0;
+      list-style: none;
+      padding: 0;
     }
 
     li {
-      padding: 8px;
-      margin-bottom: 5px;
-      background-color: #f1f3f5;
-      border-radius: 8px;
+      background: #f1f3f5;
+      margin-bottom: 10px;
+      padding: 12px 15px;
+      border-radius: 10px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      font-size: 1.1em;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
     input[type="checkbox"] {
-      transform: scale(1.2);
-    }
-
-    section {
-      background-color: #ffffff;
-      padding: 20px;
-      margin: 20px auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      max-width: 800px;
+      transform: scale(1.4);
+      margin-right: 12px;
     }
 
     pre {
       background-color: #f8f9fa;
-      padding: 15px;
+      padding: 20px;
       border-radius: 10px;
       overflow-x: auto;
       font-size: 1em;
-      border-left: 4px solid #0d6efd;
+      border-left: 6px solid #0d6efd;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
     }
 
     code {
-      background-color: #e9ecef;
+      background-color: #e0e0e0;
       padding: 2px 6px;
       border-radius: 4px;
-      font-size: 1em;
     }
 
     .explanation {
       background-color: #fff3cd;
-      padding: 15px;
-      border-left: 4px solid #ffc107;
+      padding: 20px;
+      border-left: 6px solid #ffc107;
       border-radius: 10px;
       margin-top: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    h3 {
-      margin-top: 20px;
-      color: #495057;
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    nav ul {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    nav ul li {
+      margin: 10px 0;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p style="text-align: center; font-size: 1.2em;">This is my GitHub Pages website 🚀</p>
+  <header>
+    <h1>Hello, world!</h1>
+    <p>This is my GitHub Pages website 🚀</p>
+  </header>
 
-  <h1>✅ Beginner Python Study List</h1>
+  <div class="container">
+    <h2>✅ Beginner Python Study List</h2>
+    <nav>
+      <ul>
+        <li><input type="checkbox"><a href="#unit1"> Strings, Integers, Floats, Booleans, Type Conversion</a></li>
+        <li><input type="checkbox"><a href="#unit2"> Arithmetic, Comparison, Logical, Assignment Operators</a></li>
+        <li><input type="checkbox"><a href="#unit3"> If/Elif/Else, Nested Conditions, Truthy/Falsy</a></li>
+        <li><input type="checkbox"><a href="#unit4"> For/While Loops, Break, Continue, Pass</a></li>
+      </ul>
+    </nav>
 
-  <div class="section">
-    <h2>1. Variables and Data Types</h2>
-    <ul>
-      <li><input type="checkbox">Strings (<code>"Hello"</code>, <code>'World'</code>)</li>
-      <li><input type="checkbox">Integers and floats (<code>5</code>, <code>3.14</code>)</li>
-      <li><input type="checkbox">Booleans (<code>True</code>, <code>False</code>)</li>
-      <li><input type="checkbox">Type conversion (<code>int()</code>, <code>str()</code>, <code>float()</code>)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>2. Operators</h2>
-    <ul>
-      <li><input type="checkbox">Arithmetic: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code>, <code>**</code></li>
-      <li><input type="checkbox">Comparison: <code>==</code>, <code>!=</code>, <code>></code>, <code><</code>, <code>>=</code>, <code><=</code></li>
-      <li><input type="checkbox">Logical: <code>and</code>, <code>or</code>, <code>not</code></li>
-      <li><input type="checkbox">Assignment: <code>=</code>, <code>+=</code>, <code>-=</code>, etc.</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>3. Control Flow</h2>
-    <ul>
-      <li><input type="checkbox"><code>if</code>, <code>elif</code>, <code>else</code> statements</li>
-      <li><input type="checkbox">Nested conditions</li>
-      <li><input type="checkbox">Truthy and falsy values</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>4. Loops</h2>
-    <ul>
-      <li><input type="checkbox"><code>for</code> loops</li>
-      <li><input type="checkbox"><code>while</code> loops</li>
-      <li><input type="checkbox"><code>break</code>, <code>continue</code>, <code>pass</code></li>
-    </ul>
-  </div>
-
-  <h1>🐍 Python Beginner Tutorial</h1>
-  <section>
-  <h2>🔧 Step 1: Setting Up Python</h2>
-  <ul>
-    <li>Install Python from <a href="https://www.python.org/downloads">python.org/downloads</a></li>
-    <li>Choose an IDE: VS Code, Thonny, or PyCharm</li>
-  </ul>
-</section>
-
-  <section>
-    <h2>✍️ Step 2: Your First Python Program</h2>
-    <pre><code>print("Hello, world!")</code></pre>
-    <div class="explanation">
-      <p><strong>Explanation:</strong> <code>print()</code> is a built-in function in Python. It shows whatever you put inside the parentheses. Here, it displays "Hello, world!" on the screen.</p>
+    <div class="section" id="unit0">
+      <h2>🛠️ Preparation</h2>
+      <ul>
+        <li>Install Python from <a href="https://www.python.org/downloads">python.org/downloads</a></li>
+        <li>Choose an IDE: VS Code, Thonny, or PyCharm</li>
+      </ul>
     </div>
-  </section>
 
-  <section>
-    <h2>🔢 Step 3: Variables and Data Types</h2>
-    <pre><code>name = "Alice"
+    <div class="section" id="unit1">
+      <h2>✍️ Unit 1: Variables and Data Types</h2>
+      <pre><code>name = "Alice"
 age = 25
 height = 5.4
 is_student = True</code></pre>
-    <div class="explanation">
-      <p>These are <strong>variables</strong>. They store data. Each value has a type:</p>
-      <ul>
-        <li><code>str</code> - text ("Alice")</li>
-        <li><code>int</code> - whole number (25)</li>
-        <li><code>float</code> - decimal number (5.4)</li>
-        <li><code>bool</code> - true/false (True)</li>
-      </ul>
+      <div class="explanation">
+        <p><strong>Explanation:</strong></p>
+        <ul>
+          <li><code>name = "Alice"</code> - A string: used to store text</li>
+          <li><code>age = 25</code> - An integer: used to store whole numbers</li>
+          <li><code>height = 5.4</code> - A float: used to store decimal numbers</li>
+          <li><code>is_student = True</code> - A boolean: represents true or false</li>
+        </ul>
+      </div>
     </div>
-  </section>
 
-  <section>
-    <h2>➖ Step 4: Operators</h2>
-    <pre><code>a = 10
+    <div class="section" id="unit2">
+      <h2>➖ Unit 2: Operators</h2>
+      <pre><code>a = 10
 b = 3
 print(a + b)
 print(a - b)
 print(a * b)
 print(a / b)
 print(a % b)</code></pre>
-    <div class="explanation">
-      <p>This code does math using variables <code>a</code> and <code>b</code>:</p>
-      <ul>
-        <li><code>+</code> adds</li>
-        <li><code>-</code> subtracts</li>
-        <li><code>*</code> multiplies</li>
-        <li><code>/</code> divides</li>
-        <li><code>%</code> finds the remainder</li>
-      </ul>
+      <div class="explanation">
+        <ul>
+          <li><code>+</code> adds</li>
+          <li><code>-</code> subtracts</li>
+          <li><code>*</code> multiplies</li>
+          <li><code>/</code> divides</li>
+          <li><code>%</code> gives remainder</li>
+        </ul>
+      </div>
     </div>
-  </section>
 
-  <section>
-    <h2>🔀 Step 5: Conditional Statements</h2>
-    <pre><code>age = 18
+    <div class="section" id="unit3">
+      <h2>🔀 Unit 3: Conditional Statements</h2>
+      <pre><code>age = 18
 if age >= 18:
     print("You're an adult.")
 else:
     print("You're a minor.")</code></pre>
-    <div class="explanation">
-      <p><strong>If-else</strong> checks a condition:</p>
-      <ul>
-        <li>If the age is 18 or more, it prints "You're an adult."</li>
-        <li>If not, it prints "You're a minor."</li>
-      </ul>
-      <p>Note: Indentation (spaces at the beginning of the line) is required in Python.</p>
+      <div class="explanation">
+        <ul>
+          <li><code>if</code> checks if age is 18 or more</li>
+          <li><code>else</code> runs if the condition is false</li>
+          <li>Indentation matters in Python!</li>
+        </ul>
+      </div>
     </div>
-  </section>
 
-  <section>
-    <h2>🔁 Step 6: Loops</h2>
-    <h3>for loop</h3>
-    <pre><code>for i in range(5):
+    <div class="section" id="unit4">
+      <h2>🔁 Unit 4: Loops</h2>
+      <h3>for loop</h3>
+      <pre><code>for i in range(5):
     print("Number:", i)</code></pre>
-    <div class="explanation">
-      <p><code>range(5)</code> gives numbers from 0 to 4. <code>i</code> is each number. The loop repeats 5 times.</p>
-    </div>
+      <div class="explanation">
+        <p><code>range(5)</code> gives numbers from 0 to 4. <code>i</code> is each number. Loop repeats 5 times.</p>
+      </div>
 
-    <h3>while loop</h3>
-    <pre><code>count = 0
+      <h3>while loop</h3>
+      <pre><code>count = 0
 while count < 5:
     print(count)
     count += 1</code></pre>
-    <div class="explanation">
-      <p>This repeats as long as <code>count</code> is less than 5. <code>count += 1</code> means add 1 to count each time.</p>
+      <div class="explanation">
+        <p>Repeats while <code>count</code> is less than 5. <code>count += 1</code> adds 1 each time.</p>
+      </div>
     </div>
-  </section>
-
-  <section>
-  </section>
+  </div>
 </body>
 </html>
+
