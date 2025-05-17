@@ -51,6 +51,114 @@
       <li><input type="checkbox"><code>break</code>, <code>continue</code>, <code>pass</code></li>
     </ul>
   </div>
+  
+<section>
+    <h2>Step 2: Your First Python Program</h2>
+    <pre><code>print("Hello, world!")</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> This uses the built-in <code>print()</code> function to display text. Anything in quotes will be shown on the screen.
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 3: Variables and Data Types</h2>
+    <pre><code>name = "Alice"
+age = 25
+height = 5.4
+is_student = True</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> Variables store values. <code>name</code> is a string, <code>age</code> is an integer, <code>height</code> is a float, and <code>is_student</code> is a boolean (True/False).
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 4: Operators</h2>
+    <pre><code>a = 10
+b = 3
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a % b)</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> These are arithmetic operations. <code>%</code> gives the remainder. Python follows standard math rules for operations.
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 5: Conditional Statements</h2>
+    <pre><code>age = 18
+if age >= 18:
+    print("You're an adult.")
+else:
+    print("You're a minor.")</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> <code>if</code> checks a condition. If it's true, the first block runs. Otherwise, the <code>else</code> block runs. Blocks are defined by indentation.
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 6: Loops</h2>
+    <h3>For Loop</h3>
+    <pre><code>for i in range(5):
+    print("Number:", i)</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> <code>range(5)</code> generates numbers from 0 to 4. <code>i</code> takes each value and prints it.
+    </div>
+
+    <h3>While Loop</h3>
+    <pre><code>count = 0
+while count < 5:
+    print(count)
+    count += 1</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> This loop runs as long as <code>count</code> is less than 5. <code>count += 1</code> increases the value each time.
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 7: Lists and Dictionaries</h2>
+    <pre><code>fruits = ["apple", "banana", "cherry"]
+print(fruits[0])</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> A list stores multiple items. Indexes start at 0, so <code>fruits[0]</code> accesses the first item.
+    </div>
+
+    <pre><code>person = {
+  "name": "Alice",
+  "age": 25
+}
+print(person["name"])</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> A dictionary holds key–value pairs. Use the key (e.g., <code>"name"</code>) to get its value.
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 8: Functions</h2>
+    <pre><code>def greet(name):
+    print("Hello", name)
+
+greet("Alice")</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> <code>def</code> creates a function. <code>name</code> is a parameter. When calling <code>greet("Alice")</code>, it prints a greeting.
+    </div>
+  </section>
+
+  <section>
+    <h2>Step 9: Error Handling</h2>
+    <pre><code>try:
+    x = int(input("Enter a number: "))
+    print(10 / x)
+except ValueError:
+    print("That was not a number!")
+except ZeroDivisionError:
+    print("Cannot divide by zero.")</code></pre>
+    <div class="explanation">
+      <strong>Explanation:</strong> <code>try</code> runs code that may fail. If a <code>ValueError</code> or <code>ZeroDivisionError</code> happens, the program shows a friendly message instead of crashing.
+    </div>
+  </section>
+
 
 
   
