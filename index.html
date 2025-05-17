@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,15 +50,6 @@
       gap: 10px;
     }
 
-    a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     input[type="checkbox"] {
       transform: scale(1.2);
     }
@@ -106,44 +98,81 @@
   <p style="text-align: center; font-size: 1.2em;">This is my GitHub Pages website 🚀</p>
 
   <h1>✅ Beginner Python Study List</h1>
+
   <div class="section">
-    <h2>📘 Quick Links</h2>
+    <h2>1. Variables and Data Types</h2>
     <ul>
-      <li><a href="#unit1">Unit 1: Your First Python Program</a></li>
-      <li><a href="#unit2">Unit 2: Variables and Data Types</a></li>
-      <li><a href="#unit3">Unit 3: Operators</a></li>
-      <li><a href="#unit4">Unit 4: Conditional Statements</a></li>
-      <li><a href="#unit5">Unit 5: Loops</a></li>
+      <li><input type="checkbox">Strings (<code>"Hello"</code>, <code>'World'</code>)</li>
+      <li><input type="checkbox">Integers and floats (<code>5</code>, <code>3.14</code>)</li>
+      <li><input type="checkbox">Booleans (<code>True</code>, <code>False</code>)</li>
+      <li><input type="checkbox">Type conversion (<code>int()</code>, <code>str()</code>, <code>float()</code>)</li>
     </ul>
   </div>
 
-  <section id="unit1">
-    <h2>🧱 Unit 1: Your First Python Program</h2>
+  <div class="section">
+    <h2>2. Operators</h2>
+    <ul>
+      <li><input type="checkbox">Arithmetic: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code>, <code>**</code></li>
+      <li><input type="checkbox">Comparison: <code>==</code>, <code>!=</code>, <code>></code>, <code><</code>, <code>>=</code>, <code><=</code></li>
+      <li><input type="checkbox">Logical: <code>and</code>, <code>or</code>, <code>not</code></li>
+      <li><input type="checkbox">Assignment: <code>=</code>, <code>+=</code>, <code>-=</code>, etc.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>3. Control Flow</h2>
+    <ul>
+      <li><input type="checkbox"><code>if</code>, <code>elif</code>, <code>else</code> statements</li>
+      <li><input type="checkbox">Nested conditions</li>
+      <li><input type="checkbox">Truthy and falsy values</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>4. Loops</h2>
+    <ul>
+      <li><input type="checkbox"><code>for</code> loops</li>
+      <li><input type="checkbox"><code>while</code> loops</li>
+      <li><input type="checkbox"><code>break</code>, <code>continue</code>, <code>pass</code></li>
+    </ul>
+  </div>
+
+  <h1>🐍 Python Beginner Tutorial</h1>
+  <section>
+  <h2>🔧 Step 1: Setting Up Python</h2>
+  <ul>
+    <li>Install Python from <a href="https://www.python.org/downloads">python.org/downloads</a></li>
+    <li>Choose an IDE: VS Code, Thonny, or PyCharm</li>
+  </ul>
+</section>
+
+  <section>
+    <h2>✍️ Step 2: Your First Python Program</h2>
     <pre><code>print("Hello, world!")</code></pre>
     <div class="explanation">
-      <p><strong>Explanation:</strong> <code>print()</code> is used to show messages on the screen. It's the first step to make your program speak!</p>
+      <p><strong>Explanation:</strong> <code>print()</code> is a built-in function in Python. It shows whatever you put inside the parentheses. Here, it displays "Hello, world!" on the screen.</p>
     </div>
   </section>
 
-  <section id="unit2">
-    <h2>🧮 Unit 2: Variables and Data Types</h2>
+  <section>
+    <h2>🔢 Step 3: Variables and Data Types</h2>
     <pre><code>name = "Alice"
 age = 25
 height = 5.4
 is_student = True</code></pre>
     <div class="explanation">
-      <p>Variables hold information. Here are the types:</p>
+      <p>These are <strong>variables</strong>. They store data. Each value has a type:</p>
       <ul>
-        <li><code>str</code> = text</li>
-        <li><code>int</code> = whole number</li>
-        <li><code>float</code> = decimal</li>
-        <li><code>bool</code> = true/false</li>
+        <li><code>str</code> - text ("Alice")</li>
+        <li><code>int</code> - whole number (25)</li>
+        <li><code>float</code> - decimal number (5.4)</li>
+        <li><code>bool</code> - true/false (True)</li>
       </ul>
     </div>
   </section>
 
-  <section id="unit3">
-    <h2>➕ Unit 3: Operators</h2>
+  <section>
+    <h2>➖ Step 4: Operators</h2>
     <pre><code>a = 10
 b = 3
 print(a + b)
@@ -152,36 +181,41 @@ print(a * b)
 print(a / b)
 print(a % b)</code></pre>
     <div class="explanation">
-      <p>Operators perform actions:</p>
+      <p>This code does math using variables <code>a</code> and <code>b</code>:</p>
       <ul>
-        <li><code>+</code>: add</li>
-        <li><code>-</code>: subtract</li>
-        <li><code>*</code>: multiply</li>
-        <li><code>/</code>: divide</li>
-        <li><code>%</code>: remainder</li>
+        <li><code>+</code> adds</li>
+        <li><code>-</code> subtracts</li>
+        <li><code>*</code> multiplies</li>
+        <li><code>/</code> divides</li>
+        <li><code>%</code> finds the remainder</li>
       </ul>
     </div>
   </section>
 
-  <section id="unit4">
-    <h2>🧠 Unit 4: Conditional Statements</h2>
+  <section>
+    <h2>🔀 Step 5: Conditional Statements</h2>
     <pre><code>age = 18
 if age >= 18:
     print("You're an adult.")
 else:
     print("You're a minor.")</code></pre>
     <div class="explanation">
-      <p><strong>If-else</strong> checks whether something is true. Indentation is crucial!</p>
+      <p><strong>If-else</strong> checks a condition:</p>
+      <ul>
+        <li>If the age is 18 or more, it prints "You're an adult."</li>
+        <li>If not, it prints "You're a minor."</li>
+      </ul>
+      <p>Note: Indentation (spaces at the beginning of the line) is required in Python.</p>
     </div>
   </section>
 
-  <section id="unit5">
-    <h2>🔁 Unit 5: Loops</h2>
+  <section>
+    <h2>🔁 Step 6: Loops</h2>
     <h3>for loop</h3>
     <pre><code>for i in range(5):
     print("Number:", i)</code></pre>
     <div class="explanation">
-      <p>Repeats 5 times. <code>range(5)</code> gives numbers from 0 to 4.</p>
+      <p><code>range(5)</code> gives numbers from 0 to 4. <code>i</code> is each number. The loop repeats 5 times.</p>
     </div>
 
     <h3>while loop</h3>
@@ -190,9 +224,11 @@ while count < 5:
     print(count)
     count += 1</code></pre>
     <div class="explanation">
-      <p>Repeats while the condition is true. Adds 1 to <code>count</code> each loop.</p>
+      <p>This repeats as long as <code>count</code> is less than 5. <code>count += 1</code> means add 1 to count each time.</p>
     </div>
   </section>
 
+  <section>
+  </section>
 </body>
 </html>
