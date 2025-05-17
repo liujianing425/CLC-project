@@ -5,14 +5,99 @@
   <meta charset="UTF-8">
   <title>My First GitHub Page</title>
   <style>
-    body { font-family: sans-serif; text-align: left; margin-top: 100px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      color: #212529;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d6efd;
+      margin-top: 60px;
+      font-size: 2.5em;
+    }
+
+    h2 {
+      color: #343a40;
+      margin-top: 30px;
+      font-size: 1.75em;
+    }
+
+    .section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      max-width: 800px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      padding: 8px;
+      margin-bottom: 5px;
+      background-color: #f1f3f5;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.2);
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      max-width: 800px;
+    }
+
+    pre {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      overflow-x: auto;
+      font-size: 1em;
+      border-left: 4px solid #0d6efd;
+    }
+
+    code {
+      background-color: #e9ecef;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    .explanation {
+      background-color: #fff3cd;
+      padding: 15px;
+      border-left: 4px solid #ffc107;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #495057;
+    }
   </style>
 </head>
 <body>
   <h1>Hello, world!</h1>
-  <p>This is my GitHub Pages website 🚀</p>
-  
-<h1>✅ Beginner Python Study List</h1>
+  <p style="text-align: center; font-size: 1.2em;">This is my GitHub Pages website 🚀</p>
+
+  <h1>✅ Beginner Python Study List</h1>
 
   <div class="section">
     <h2>1. Variables and Data Types</h2>
@@ -51,28 +136,36 @@
       <li><input type="checkbox"><code>break</code>, <code>continue</code>, <code>pass</code></li>
     </ul>
   </div>
-  
-<section>
-    <h2>Step 2: Your First Python Program</h2>
+
+  <h1>🐍 Python Beginner Tutorial</h1>
+
+  <section>
+    <h2>✍️ Step 2: Your First Python Program</h2>
     <pre><code>print("Hello, world!")</code></pre>
     <div class="explanation">
-      <strong>Explanation:</strong> This uses the built-in <code>print()</code> function to display text. Anything in quotes will be shown on the screen.
+      <p><strong>Explanation:</strong> <code>print()</code> is a built-in function in Python. It shows whatever you put inside the parentheses. Here, it displays "Hello, world!" on the screen.</p>
     </div>
   </section>
 
   <section>
-    <h2>Step 3: Variables and Data Types</h2>
+    <h2>🔢 Step 3: Variables and Data Types</h2>
     <pre><code>name = "Alice"
 age = 25
 height = 5.4
 is_student = True</code></pre>
     <div class="explanation">
-      <strong>Explanation:</strong> Variables store values. <code>name</code> is a string, <code>age</code> is an integer, <code>height</code> is a float, and <code>is_student</code> is a boolean (True/False).
+      <p>These are <strong>variables</strong>. They store data. Each value has a type:</p>
+      <ul>
+        <li><code>str</code> - text ("Alice")</li>
+        <li><code>int</code> - whole number (25)</li>
+        <li><code>float</code> - decimal number (5.4)</li>
+        <li><code>bool</code> - true/false (True)</li>
+      </ul>
     </div>
   </section>
 
   <section>
-    <h2>Step 4: Operators</h2>
+    <h2>➖ Step 4: Operators</h2>
     <pre><code>a = 10
 b = 3
 print(a + b)
@@ -81,86 +174,54 @@ print(a * b)
 print(a / b)
 print(a % b)</code></pre>
     <div class="explanation">
-      <strong>Explanation:</strong> These are arithmetic operations. <code>%</code> gives the remainder. Python follows standard math rules for operations.
+      <p>This code does math using variables <code>a</code> and <code>b</code>:</p>
+      <ul>
+        <li><code>+</code> adds</li>
+        <li><code>-</code> subtracts</li>
+        <li><code>*</code> multiplies</li>
+        <li><code>/</code> divides</li>
+        <li><code>%</code> finds the remainder</li>
+      </ul>
     </div>
   </section>
 
   <section>
-    <h2>Step 5: Conditional Statements</h2>
+    <h2>🔀 Step 5: Conditional Statements</h2>
     <pre><code>age = 18
 if age >= 18:
     print("You're an adult.")
 else:
     print("You're a minor.")</code></pre>
     <div class="explanation">
-      <strong>Explanation:</strong> <code>if</code> checks a condition. If it's true, the first block runs. Otherwise, the <code>else</code> block runs. Blocks are defined by indentation.
+      <p><strong>If-else</strong> checks a condition:</p>
+      <ul>
+        <li>If the age is 18 or more, it prints "You're an adult."</li>
+        <li>If not, it prints "You're a minor."</li>
+      </ul>
+      <p>Note: Indentation (spaces at the beginning of the line) is required in Python.</p>
     </div>
   </section>
 
   <section>
-    <h2>Step 6: Loops</h2>
-    <h3>For Loop</h3>
+    <h2>🔁 Step 6: Loops</h2>
+    <h3>for loop</h3>
     <pre><code>for i in range(5):
     print("Number:", i)</code></pre>
     <div class="explanation">
-      <strong>Explanation:</strong> <code>range(5)</code> generates numbers from 0 to 4. <code>i</code> takes each value and prints it.
+      <p><code>range(5)</code> gives numbers from 0 to 4. <code>i</code> is each number. The loop repeats 5 times.</p>
     </div>
 
-    <h3>While Loop</h3>
+    <h3>while loop</h3>
     <pre><code>count = 0
 while count < 5:
     print(count)
     count += 1</code></pre>
     <div class="explanation">
-      <strong>Explanation:</strong> This loop runs as long as <code>count</code> is less than 5. <code>count += 1</code> increases the value each time.
+      <p>This repeats as long as <code>count</code> is less than 5. <code>count += 1</code> means add 1 to count each time.</p>
     </div>
   </section>
 
   <section>
-    <h2>Step 7: Lists and Dictionaries</h2>
-    <pre><code>fruits = ["apple", "banana", "cherry"]
-print(fruits[0])</code></pre>
-    <div class="explanation">
-      <strong>Explanation:</strong> A list stores multiple items. Indexes start at 0, so <code>fruits[0]</code> accesses the first item.
-    </div>
-
-    <pre><code>person = {
-  "name": "Alice",
-  "age": 25
-}
-print(person["name"])</code></pre>
-    <div class="explanation">
-      <strong>Explanation:</strong> A dictionary holds key–value pairs. Use the key (e.g., <code>"name"</code>) to get its value.
-    </div>
   </section>
-
-  <section>
-    <h2>Step 8: Functions</h2>
-    <pre><code>def greet(name):
-    print("Hello", name)
-
-greet("Alice")</code></pre>
-    <div class="explanation">
-      <strong>Explanation:</strong> <code>def</code> creates a function. <code>name</code> is a parameter. When calling <code>greet("Alice")</code>, it prints a greeting.
-    </div>
-  </section>
-
-  <section>
-    <h2>Step 9: Error Handling</h2>
-    <pre><code>try:
-    x = int(input("Enter a number: "))
-    print(10 / x)
-except ValueError:
-    print("That was not a number!")
-except ZeroDivisionError:
-    print("Cannot divide by zero.")</code></pre>
-    <div class="explanation">
-      <strong>Explanation:</strong> <code>try</code> runs code that may fail. If a <code>ValueError</code> or <code>ZeroDivisionError</code> happens, the program shows a friendly message instead of crashing.
-    </div>
-  </section>
-
-
-
-  
 </body>
 </html>
