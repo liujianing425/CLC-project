@@ -1,220 +1,207 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Python Beginner Tutorial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #fce4ec);
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #6200ea;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-
-    .container {
-      padding: 30px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-
-    .section {
-      background-color: #ffffff;
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 16px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    }
-
-    h2, h3 {
-      color: #1a237e;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      background: #f1f3f5;
-      margin-bottom: 10px;
-      padding: 12px 15px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      font-size: 1.1em;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    }
-
-    input[type="checkbox"] {
-      transform: scale(1.4);
-      margin-right: 12px;
-    }
-
-    pre {
-      background-color: #f8f9fa;
-      padding: 20px;
-      border-radius: 10px;
-      overflow-x: auto;
-      font-size: 1em;
-      border-left: 6px solid #0d6efd;
-      box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
-    }
-
-    code {
-      background-color: #e0e0e0;
-      padding: 2px 6px;
-      border-radius: 4px;
-    }
-
-    .explanation {
-      background-color: #fff3cd;
-      padding: 20px;
-      border-left: 6px solid #ffc107;
-      border-radius: 10px;
-      margin-top: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    }
-
-    a {
-      color: #0d6efd;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    nav ul {
-      background-color: #ffffff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    }
-
-    nav ul li {
-      margin: 10px 0;
-    }
+    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:linear-gradient(135deg,#f8f9fa,#e9ecef);color:#212529;margin:0;padding:0 20px}
+    h1{text-align:center;color:#0d6efd;margin-top:70px;font-size:2.5em}
+    h2{color:#343a40;margin-top:30px;font-size:1.75em}
+    .section,section{background:#fff;padding:20px;margin:20px auto;border-radius:12px;box-shadow:0 4px 8px rgba(0,0,0,.05);max-width:800px}
+    ul{list-style:none;padding-left:0}
+    li{padding:8px;margin-bottom:5px;background:#f1f3f5;border-radius:8px;display:flex;align-items:center;gap:10px}
+    input[type="checkbox"]{transform:scale(1.2)}
+    pre{background:#f8f9fa;padding:15px;border-radius:10px;overflow-x:auto;font-size:1em;border-left:4px solid #0d6efd}
+    code{background:#e9ecef;padding:2px 6px;border-radius:4px;font-size:1em}
+    .explanation{background:#fff3cd;padding:15px;border-left:4px solid #ffc107;border-radius:10px;margin-top:15px}
+    h3{margin-top:20px;color:#495057}
+    nav{position:fixed;top:0;left:0;width:100%;background:#fff;border-bottom:1px solid #dee2e6;box-shadow:0 2px 4px rgba(0,0,0,.05);padding:10px 20px;z-index:1000}
+    nav ul{display:flex;justify-content:center;gap:20px;margin:0;padding:0}
+    nav a{text-decoration:none;color:#0d6efd;font-weight:bold}
+    nav a:hover{text-decoration:underline}
+    .quiz{margin-top:30px;padding:15px;background:#e2f0d9;border-left:4px solid #28a745;border-radius:10px}
+    .quiz h4{margin-bottom:10px}
+    .quiz label{display:block;margin:5px 0}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hello, world!</h1>
-    <p>This is my GitHub Pages website 🚀</p>
-  </header>
+  <nav>
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#prep">Prep</a></li>
+      <li><a href="#unit1">Unit1</a></li>
+      <li><a href="#unit2">Unit2</a></li>
+      <li><a href="#unit3">Unit3</a></li>
+      <li><a href="#unit4">Unit4</a></li>
+      <li><a href="#unit5">Unit5</a></li>
+      <li><a href="#unit6">Unit6</a></li>
+    </ul>
+  </nav>
 
-  <div class="container">
-    <h2>✅ Beginner Python Study List</h2>
-    <nav>
-      <ul>
-        <li><input type="checkbox"><a href="#unit1"> Strings, Integers, Floats, Booleans, Type Conversion</a></li>
-        <li><input type="checkbox"><a href="#unit2"> Arithmetic, Comparison, Logical, Assignment Operators</a></li>
-        <li><input type="checkbox"><a href="#unit3"> If/Elif/Else, Nested Conditions, Truthy/Falsy</a></li>
-        <li><input type="checkbox"><a href="#unit4"> For/While Loops, Break, Continue, Pass</a></li>
-      </ul>
-    </nav>
+  <h1 style="padding-top:90px">Python Beginner Tutorial</h1>
 
-    <div class="section" id="unit0">
-      <h2>🛠️ Preparation</h2>
-      <ul>
-        <li>Install Python from <a href="https://www.python.org/downloads">python.org/downloads</a></li>
-        <li>Choose an IDE: VS Code, Thonny, or PyCharm</li>
-      </ul>
-    </div>
-
-    <div class="section" id="unit1">
-      <h2>✍️ Unit 1: Variables and Data Types</h2>
-      <pre><code>name = "Alice"
-age = 25
-height = 5.4
-is_student = True</code></pre>
-      <div class="explanation">
-        <p><strong>Explanation:</strong></p>
-        <ul>
-          <li><code>name = "Alice"</code> - A string: used to store text</li>
-          <li><code>age = 25</code> - An integer: used to store whole numbers</li>
-          <li><code>height = 5.4</code> - A float: used to store decimal numbers</li>
-          <li><code>is_student = True</code> - A boolean: represents true or false</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section" id="unit2">
-      <h2>➖ Unit 2: Operators</h2>
-      <pre><code>a = 10
-b = 3
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)</code></pre>
-      <div class="explanation">
-        <ul>
-          <li><code>+</code> adds</li>
-          <li><code>-</code> subtracts</li>
-          <li><code>*</code> multiplies</li>
-          <li><code>/</code> divides</li>
-          <li><code>%</code> gives remainder</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section" id="unit3">
-      <h2>🔀 Unit 3: Conditional Statements</h2>
-      <pre><code>age = 18
-if age >= 18:
-    print("You're an adult.")
-else:
-    print("You're a minor.")</code></pre>
-      <div class="explanation">
-        <ul>
-          <li><code>if</code> checks if age is 18 or more</li>
-          <li><code>else</code> runs if the condition is false</li>
-          <li>Indentation matters in Python!</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section" id="unit4">
-      <h2>🔁 Unit 4: Loops</h2>
-      <h3>for loop</h3>
-      <pre><code>for i in range(5):
-    print("Number:", i)</code></pre>
-      <div class="explanation">
-        <p><code>range(5)</code> gives numbers from 0 to 4. <code>i</code> is each number. Loop repeats 5 times.</p>
-      </div>
-
-      <h3>while loop</h3>
-      <pre><code>count = 0
-while count < 5:
-    print(count)
-    count += 1</code></pre>
-      <div class="explanation">
-        <p>Repeats while <code>count</code> is less than 5. <code>count += 1</code> adds 1 each time.</p>
-      </div>
-    </div>
+  <div class="section">
+    <h2>Study Checklist</h2>
+    <ul>
+      <li><input type="checkbox"> <a href="#unit1">Unit 1 – print()</a></li>
+      <li><input type="checkbox"> <a href="#unit2">Unit 2 – Variables & Data Types</a></li>
+      <li><input type="checkbox"> <a href="#unit3">Unit 3 – Operators</a></li>
+      <li><input type="checkbox"> <a href="#unit4">Unit 4 – Conditional Statements</a></li>
+      <li><input type="checkbox"> <a href="#unit5">Unit 5 – Loops</a></li>
+      <li><input type="checkbox"> <a href="#unit6">Unit 6 – Functions</a></li>
+    </ul>
   </div>
+
+  <section id="intro">
+    <h2>📘 Introduction</h2>
+    <div class="explanation">
+      <p>This tutorial guides absolute beginners through Python basics. Read each unit, study examples, then test yourself with the quiz.</p>
+    </div>
+  </section>
+
+  <section id="prep">
+    <h2>🔧 Preparation</h2>
+    <h3>Install Python</h3>
+    <div class="explanation"><p>Download from <a href="https://python.org/downloads">python.org</a> and follow installer instructions.</p></div>
+    <h3>Choose an IDE</h3>
+    <div class="explanation"><p>VS Code, Thonny (beginner‑friendly), or PyCharm are popular choices.</p></div>
+  </section>
+
+  <section id="unit1">
+    <h2>Unit 1 – print()</h2>
+    <h3>Definition</h3>
+    <div class="explanation">
+      <p><code>print()</code> is a built-in Python function that outputs text or variables to the screen.</p>
+    </div>
+    <h3>How to Use</h3>
+    <div class="explanation">
+      <p>Write <code>print()</code> followed by the text or variable in parentheses and quotation marks (for text).</p>
+    </div>
+    <h3>Example</h3>
+    <pre><code>print("Hello, world!")</code></pre>
+    <div class="explanation">
+      <p>This line prints the text "Hello, world!" to the screen.</p>
+    </div>
+    <div class="quiz">
+      <h4>Quiz: What does <code>print("Python")</code> do?</h4>
+      <label><input type="radio" name="q1"> It saves the word "Python" to a file.</label>
+      <label><input type="radio" name="q1"> It prints the word "Python" on the screen.</label>
+      <label><input type="radio" name="q1"> It creates a new variable.</label>
+    </div>
+  </section>
+  <section id="unit2">
+    <h2>Unit 2 – Variables & Data Types</h2>
+    <h3>Definition</h3>
+    <div class="explanation">
+      <p>Variables store data values. Data types define the kind of data (like numbers or text).</p>
+    </div>
+    <h3>How to Use</h3>
+    <div class="explanation">
+      <p>Assign a value to a variable using the equals sign. Common data types include <code>int</code> (numbers), <code>str</code> (text), <code>float</code> (decimal), and <code>bool</code> (True/False).</p>
+    </div>
+    <h3>Example</h3>
+    <pre><code>name = "Alice"
+  age = 25
+  height = 5.6
+  is_student = True</code></pre>
+    <div class="quiz">
+      <h4>Quiz: What type of data is <code>"hello"</code> in Python?</h4>
+      <label><input type="radio" name="q2"> Integer</label>
+      <label><input type="radio" name="q2"> Boolean</label>
+      <label><input type="radio" name="q2"> String</label>
+    </div>
+  </section>
+  <section id="unit3">
+  <h2>Unit 3 – Operators</h2>
+  <h3>Definition</h3>
+  <div class="explanation">
+    <p>Operators perform actions on variables and values, like addition or comparison.</p>
+  </div>
+  <h3>How to Use</h3>
+  <div class="explanation">
+    <p>Use math operators like <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code> for arithmetic. Use <code>==</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code> for comparisons.</p>
+  </div>
+  <h3>Example</h3>
+  <pre><code>x = 10
+y = 5
+print(x + y)       # 15
+print(x > y)       # True</code></pre>
+  <div class="quiz">
+    <h4>Quiz: What does <code>==</code> check in Python?</h4>
+    <label><input type="radio" name="q3"> If two values are equal</label>
+    <label><input type="radio" name="q3"> If a value is less than another</label>
+    <label><input type="radio" name="q3"> If a variable is defined</label>
+  </div>
+</section>
+
+
+  <section id="unit4">
+    <h2>Unit 4 – Conditional Statements</h2>
+    <h3>Definition</h3>
+    <div class="explanation">
+      <p>Conditional statements let your program make decisions using <code>if</code>, <code>elif</code>, and <code>else</code>.</p>
+    </div>
+    <h3>How to Use</h3>
+    <div class="explanation">
+      <p>Use <code>if</code> to check a condition, <code>elif</code> for other conditions, and <code>else</code> if none match.</p>
+    </div>
+    <h3>Example</h3>
+    <pre><code>age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</code></pre>
+    <div class="quiz">
+      <h4>Quiz: What does <code>if x &gt; 10:</code> do?</h4>
+      <label><input type="radio" name="q4"> It repeats a loop.</label>
+      <label><input type="radio" name="q4"> It checks if x is greater than 10.</label>
+      <label><input type="radio" name="q4"> It defines a function.</label>
+    </div>
+  </section>
+
+  <section id="unit5">
+    <h2>Unit 5 – Loops</h2>
+    <h3>Definition</h3>
+    <div class="explanation">
+      <p>Loops allow you to repeat actions. Python uses <code>for</code> and <code>while</code> loops.</p>
+    </div>
+    <h3>How to Use</h3>
+    <div class="explanation">
+      <p><code>for</code> is used for iterating over sequences. <code>while</code> continues as long as a condition is true.</p>
+    </div>
+    <h3>Example</h3>
+    <pre><code>for i in range(3):
+    print("Hi")</code></pre>
+    <div class="quiz">
+      <h4>Quiz: What does <code>while True:</code> do?</h4>
+      <label><input type="radio" name="q5"> Loops once</label>
+      <label><input type="radio" name="q5"> Loops forever</label>
+      <label><input type="radio" name="q5"> Ends immediately</label>
+    </div>
+  </section>
+
+  <section id="unit6">
+    <h2>Unit 6 – Functions</h2>
+    <h3>Definition</h3>
+    <div class="explanation">
+      <p>Functions are blocks of code designed to perform a task when called.</p>
+    </div>
+    <h3>How to Use</h3>
+    <div class="explanation">
+      <p>Use <code>def</code> to define a function, followed by parentheses and a colon. Call it using its name with parentheses.</p>
+    </div>
+    <h3>Example</h3>
+    <pre><code>def greet():
+    print("Hello!")
+
+greet()</code></pre>
+    <div class="quiz">
+      <h4>Quiz: What does <code>def add():</code> do?</h4>
+      <label><input type="radio" name="q6"> It creates a loop</label>
+      <label><input type="radio" name="q6"> It defines a function</label>
+      <label><input type="radio" name="q6"> It prints text</label>
+    </div>
+  </section>
+
 </body>
 </html>
-
